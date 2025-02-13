@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading page</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: century;
+    }
+    header{
+background-image: url('shopping-online-on-phone-with-podium-paper-art-modern-pink-background-gifts-box-illustration-free-vector.jpg');
+height: 100vh;
+background-size: cover;
+background-position: center;
+min-height: 100px;
+    }
+    ul{
+        float: right;
+        list-style-type: none;
+        margin-top: 30px;
+        min-height: 400px;
+        margin-right: 40px;
+        font-size: 16px;
+    }
+    ul li{
+        display:inline-block ;
+
+    }
+    ul li a{
+        text-decoration: none;
+        color: #ac5454;
+        padding: 5px 20px;
+        border: 1px solid transparent;
+        transition: 0.5 ease;
+    }
+    ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    ul li.active a{
+        background-color: #fff;
+        color: #000;
+    
+    }
+    .logo img{
+        float: left;
+        width: 250px;
+        height: 200px;
+        margin-top: 20px;
+    }
+    .main{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .title{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .title h1{
+        color: #975151;
+        font-size: 40px;
+    }
+    .button{
+        position: absolute;
+        top: 54%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .btn{
+        border: 1px solid #fff;
+        padding: 5px  20px;
+        color: #fff;
+        transition: 0.5 ease;
+        font-size: 18px;
+        text-decoration: none;
+    }
+    .btn:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    .sub-menu{
+        display: none;
+        top: 6%;
+        position: relative;
+    }
+    .sub-menu ul{
+position: absolute;
+    }
+    .main ul li:hover .sub-menu{
+        display: block;
+        position:absolute; 
+        background-color: rgb(0,45,117);
+        margin-top: 12px;
+        margin-left: -8px ;
+
+    }
+    .main ul li:hover .sub-menu ul{
+        display: block;
+        margin: 6px;
+
+    }
+    .main ul li :hover .sub-menu ul li{
+width: 75px;
+padding: 5px;
+border-bottom: 1px #fff;
+background: transparent;
+transition: 0.4 ease;
+text-align: left;
+border-radius: 0px;
+    }
+
+    .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+    background-color: #fadde1;
+    color: #975151;;
+    padding: 5px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+</style>
+<body>
+<header>
+    <div class="main">
+        <dir class="logo">
+            <img src="bags1.jpg" alt="" width="300" height="300">
+          
+        </dir>
+        <ul>
+            <li class="dropdown">
+                <button class="dropbtn"><i class="fa fa-caret-down"></i>Men</button>
+                <div class="dropdown-content">
+                    <a href="shirts.html">Shirts</a>
+                        <a href="jeans.html">Jeans</a>
+                        <a href="accesorries.html">Accessories</a>
+                        <a href="ethnic wear.html">Ethnic Wear</a>
+                    </div>
+
+            <li><div class="dropdown">
+                <button class="dropbtn"><i class="fa fa-caret-down"></i>Women</button>
+                <div class="dropdown-content">
+                    <a href="saree.html">Sarees</a>
+                        <a href="duppata.html">Dupatta Sets</a>
+                        <a href="kurti.html">kurti sets</a>
+                        <a href="ethinic.html">Other Ethnic Wear</a>
+                    </div>
+                    <li class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-caret-down"></i>Kids</button>
+                        <div class="dropdown-content">
+                            <a href="kids.html">Boys & Girls 2+ years</a>
+                                <a href="kids02yr.html">0-2 years</a>
+                                
+                            </div>
+                            <li class="dropdown">
+                                <button class="dropbtn"><i class="fa fa-caret-down"></i> Bags </button>
+                                <div class="dropdown-content">
+                                    <a href="womensbag.html">Women Bags</a>
+                                        <a href="mensbag.html">Men Bags</a>
+                                        <a href="travel.html">Travel Bag</a>
+                                        
+                                    </div>
+                                    <li class="dropdown">
+                                        <button class="dropbtn"><i class="fa fa-caret-down"></i>Footwear</button>
+                                        <div class="dropdown-content">
+                                            <a href="footware.html">Men Footwear</a>
+                                            <a href="womensfootwear.html">Women Footwear</a>
+                                            <a href="kidsfootwear.html">Kids Footwear</a>
+                                               
+                                            </div>
+                                            <li class="dropdown">
+                                                <button class="dropbtn"><i class="fa fa-caret-down"></i>Beauty & Health</button>
+                                                <div class="dropdown-content">
+                                                    <a href="cosmatics.html">cosmatics</a>
+
+                                                        <a href="jwellery.html">Jwellery</a>
+                                                        
+                                                    </div>
+                                                    <li>
+                                                        <div class="dropdown">
+                                                            <button class="dropbtn"><i class="fa fa-caret-down"></i> More </button>
+                                                            <div class="dropdown-content">
+                                                                <a href="kitchenaccesories.html">Kitchen Accessories</a>
+                                                                <a href="kidstoy.html">Toys</a>
+                                                                <a href="electronic.html">Electronics</a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+            </div>
+            </li>
+            
+
+    </div>
+    <div class="title">
+        <h1>NEW USER? <br>FLAT<sup>₹</sup>200 OFF</h1>
+    </div><br><br><br>
+    
+    <div class="button">
+        <a href="address.html" class="btn">ADDRESS</a>
+        <a href="bag.html" class="btn">BAG</a>
+        <a href="payment.html" class="btn">PAYMENT</a>
+        
+        <img src="" alt="">
+
+    
+    </div>
+
+</header>
+    
+</body>
+</html>
